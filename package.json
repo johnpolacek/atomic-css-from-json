@@ -1,0 +1,28 @@
+{
+  "name": "atomic-css-from-json",
+  "version": "0.0.1",
+  "description": "Generate static libraries of immutable utility classes from a JSON settings file",
+  "main": "index.js",
+  "bin": {
+    "generate-atomic": "./index.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpolacek/atomic-css-from-json.git"
+  },
+  "keywords": [
+    "atomic",
+    "css",
+    "css"
+  ],
+  "author": "John Polacek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnpolacek/atomic-css-from-json/issues"
+  },
+  "homepage": "https://github.com/johnpolacek/atomic-css-from-json#readme",
+  "dependencies": {
+    "absurd": "^0.3.8"
+  }
+}
