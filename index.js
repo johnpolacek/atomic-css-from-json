@@ -22,8 +22,6 @@ Object.assign(css, generateStyles(theme.color.modules, theme.color.colors));
 Object.assign(css, generateStyles(theme.typography.modules, theme.typography.styles));
 Object.assign(css, generateStyles(theme.layout.modules, theme.layout.styles));
 
-css['.undefined'] = null; // remove when name is undefined in theme
-
 if (theme.libs) {
 	for (let lib of theme.libs) {
 		api.rawImport('./src/lib/'+lib);
