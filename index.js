@@ -3,7 +3,6 @@
 'use strict';
 
 const Absurd = require('absurd');
-const fs = require('fs');
 const api = Absurd();
 const theme = require('./src/theme');
 
