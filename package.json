@@ -6,7 +6,9 @@
   "bin": {
     "generate-atomic": "./index.js"
   },
-  "scripts": {},
+  "scripts": {
+    "build":"generate-atomic"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnpolacek/atomic-css-from-json.git"
