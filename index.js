@@ -2,7 +2,10 @@
 
 'use strict';
 
-const Absurd = require('absurd');
+if (typeof Absurd == 'undefined') {
+	// if using this client-side, use absurd.min.js per http://absurdjs.com/pages/installation/
+	const Absurd = require('absurd');
+}
 const api = Absurd();
 const theme = require('./src/theme');
 
