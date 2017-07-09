@@ -58,12 +58,10 @@ module.exports = {
 			"NegativeMargins",
 			"Overflow",
 			"Position",
-			"ScreenHeight",
 			"Spacing",
 			"VerticalAlign",
 			"WhiteSpace",
 			"WidthPercentageScale",
-			"WidthScale",
 			"ZIndex"
 		],
 		"naming":{
