@@ -23,7 +23,7 @@ Object.assign(css, generateStyles(theme.typography.modules, theme.typography.sty
 Object.assign(css, generateStyles(theme.layout.modules, theme.layout.styles));
 
 if (css['.undefined']) {
-	console.warn('undefined class generated.');
+	console.warn('Warning: Undefined class generated. Check modules and theme settings.');
 }
 
 if (theme.libs) {
