@@ -34,6 +34,6 @@ if (theme.libs) {
 
 api.add(css);
 
-api.compileFile('../css/styles.css', function(err, result) {
+api.compileFile('./css/styles.css', function(err, result) {
     // console.log(result);
 }, {});
