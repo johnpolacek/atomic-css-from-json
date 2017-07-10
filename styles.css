@@ -57,11 +57,14 @@ input[type="url"],
 .underline {
   text-decoration: underline;
 }
-.text-decoration-none {
-  text-decoration: none;
-}
 .caps {
   text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.text-decoration-none {
+  text-decoration: none;
 }
 .caps-letter-spacing {
   letter-spacing: 6rem;
@@ -143,6 +146,9 @@ input[type="url"],
 }
 .rounded-left {
   border-radius: 3px 0 0 3px;
+}
+.circle {
+  border-radius: 100%;
 }
 .clearfix:before, .clearfix:after {
   content: " ";

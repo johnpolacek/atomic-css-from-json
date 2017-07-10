@@ -30,9 +30,9 @@ class BorderRadius extends BaseStylingModule {
 				css[borderClass + '-left'] = { 'border-radius': layout.borderRadius[i]+' '+'0 0 '+layout.borderRadius[i] };
 			}
 		}
-		css['.' + theme.layout.naming.circle || 'circle'] = { 'border-radius': '100%' };
+		css['.' + (theme.layout.naming.circle || 'circle')] = { 'border-radius': '100%' };
 		if (theme.layout.naming.pill) {
-			css['.' + theme.layout.naming.pill || 'pill'] = { 'border-radius': '9999px' };
+			css['.' +( theme.layout.naming.pill || 'pill')] = { 'border-radius': '9999px' };
 		}
 
 		return css;

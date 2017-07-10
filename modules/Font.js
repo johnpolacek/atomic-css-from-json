@@ -47,13 +47,22 @@ class Font extends BaseStylingModule {
 		}
 		super.extendProps(css, super.getProps('font-weight', declarations));
 		
-		css['.'+ theme.typography.naming.decoration.underline] = { 'text-decoration':'underline' };
-		css['.'+ theme.typography.naming.decoration.linethrough] = { 'text-decoration':'line-through' };
-		css['.'+ theme.typography.naming.decoration.none] = { 'text-decoration':'none' };
-		css['.'+ theme.typography.naming.transform.capitalize] = { 'text-transform':'capitalize' };
-		css['.'+ theme.typography.naming.transform.uppercase] = { 'text-transform':'uppercase' };
-		css['.'+ theme.typography.naming.transform.lowercase] = { 'text-transform':'lowercase' };
-		css['.'+ theme.typography.naming.transform.none] = { 'text-transform':'none' };
+		css['.'+ (theme.typography.naming.decoration.underline || 'underline')] = { 'text-decoration':'underline' };
+		css['.'+ (theme.typography.naming.transform.uppercase || 'uppercase')] = { 'text-transform':'uppercase' };
+		css['.'+ (theme.typography.naming.transform.lowercase || 'lowercase')] = { 'text-transform':'lowercase' };
+
+		if (theme.typography.naming.decoration.none) {
+			css['.'+ theme.typography.naming.decoration.none] = { 'text-decoration':'none' };
+		}
+		if (theme.typography.naming.transform.capitalize) {
+			css['.'+ theme.typography.naming.transform.capitalize] = { 'text-transform':'capitalize' };
+		}
+		if (theme.typography.naming.decoration.linethrough) {
+			css['.'+ theme.typography.naming.decoration.linethrough] = { 'text-decoration':'line-through' };
+		}
+		if (theme.typography.naming.transform.none) {
+			css['.'+ theme.typography.naming.transform.none] = { 'text-transform':'none' };
+		}
 
 		return css;
 	}
