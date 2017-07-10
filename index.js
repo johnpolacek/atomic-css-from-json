@@ -10,7 +10,7 @@ const generateStyles = (modules, styles) => {
 	let styleModules = {};
 	let css = {};
 	for (let module of modules) {
-		styleModules[module] = require('./modules/'+module);
+		styleModules[module] = require('./src/modules/'+module);
 		Object.assign(css, new styleModules[module](theme, styles).generate());
 	}
 	return css;
