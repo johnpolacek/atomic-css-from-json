@@ -20,8 +20,6 @@ These articles were helpful to me when building this project:
 
 https://medium.com/javascript-training/introduction-to-using-npm-as-a-build-tool-b41076f488b0
 
-https://medium.freecodecamp.com/writing-command-line-applications-in-nodejs-2cf8327eee2
-
 https://developer.atlassian.com/blog/2015/11/scripting-with-node/
 
 http://javascriptplayground.com/blog/2015/03/node-command-line-tool/
