@@ -2,10 +2,7 @@
 
 'use strict';
 
-if (typeof Absurd == 'undefined') {
-	// if using this client-side, use absurd.min.js per http://absurdjs.com/pages/installation/
-	const Absurd = require('absurd');
-}
+const Absurd = require('absurd');
 const api = Absurd();
 const theme = require('./src/theme');
 
@@ -37,6 +34,6 @@ if (theme.libs) {
 
 api.add(css);
 
-api.compileFile('./styles.css', function(err, result) {
+api.compileFile('../css/styles.css', function(err, result) {
     // console.log(result);
 }, {});
