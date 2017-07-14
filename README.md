@@ -1,5 +1,7 @@
 # Atomic CSS From JSON
 
+*An experimental work in progress*
+
 Atomic CSS From JSON allows you to generate static libraries of immutable utility classes from a JSON settings file.
 
 ---
